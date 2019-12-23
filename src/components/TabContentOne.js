@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from './Button'
 import Img from '../images/tab-1-pic.png'
 import styled from 'styled-components'
+import { generateMedia } from 'react-media-query'
 
 function TabContentOne() {
 
@@ -12,7 +13,7 @@ function TabContentOne() {
                     <div>
 
 
-                        <span style={{ marginBottom: '2rem' }}>If you decide Netflix isn't for you - no problem. No commitment. Cancel online anytime.</span>
+                        <span className="title" style={{ marginBottom: '2rem' }}>If you decide Netflix isn't for you - no problem. No commitment. Cancel online anytime.</span>
                         <br />
                         <Button style={{ marginTop: '2rem' }}>try it now</Button>
                     </div>
@@ -25,6 +26,12 @@ function TabContentOne() {
 
 export default TabContentOne;
 
+// Media Query
+const customMedia = generateMedia({
+    smDesktop: '1440px',
+    tablet: '960px'
+})
+
 // Main Content Container
 const TabContentContainer = styled.div`
 background: var(--main-deep-dark);
@@ -35,6 +42,14 @@ background: var(--main-deep-dark);
 
 img {
     width: 31.875rem
+}
+
+.title {
+    margin-top: 2rem;
+    ${customMedia.lessThan('smDesktop')`
+    font-size: 1.5rem;
+    line-height: 1;
+    `}
 }
 
 .tab-content {

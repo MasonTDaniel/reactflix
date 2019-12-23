@@ -5,6 +5,8 @@ import styled from "styled-components";
 import { Button } from './Button';
 import { Icon } from "react-icons-kit";
 import { ic_keyboard_arrow_right } from "react-icons-kit/md/ic_keyboard_arrow_right";
+// Media Query
+import { generateMedia } from 'styled-media-query'
 
 class Header extends Component {
   render() {
@@ -32,6 +34,13 @@ class Header extends Component {
 
 export default Header;
 
+const customMedia = generateMedia({
+  lgDesktop: '1350px',
+  mdDesktop: '1150px',
+  tablet: '960px',
+  smTablet: '740px'
+})
+
 // Logo
 const Logo = styled.img`
   width: 10rem;
@@ -40,6 +49,9 @@ const Logo = styled.img`
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
+  ${customMedia.lessThan('tablet')`
+    left: 20%;
+  `}
 `;
 
 // Header Container
@@ -60,6 +72,10 @@ const HeaderComponent = styled.div`
     &:hover {
       background: var(--main-red-hover);
     }
+    ${customMedia.lessThan('smTablet')`
+      margin-top: 1.25rem;
+      right: 5%;
+    `}
   }
 
   // Header Top
@@ -80,12 +96,35 @@ const HeaderComponent = styled.div`
     text-align: center;
     flex-direction: column;
     z-index: 1;
+    ${customMedia.lessThan('smTablet')`
+      display: grid;
+      grid-template-rows: repeat(3, 60px);
+      margin-top: 8rem;
+    `}
   }
 
   // Icon
   .icon svg {
     vertical-align: bottom;
     margin-left: 0.5rem;
+    ${customMedia.lessThan('smTablet')`
+      display: none !important;
+    `}
+  }
+
+  .main-offer-btn {
+    ${customMedia.lessThan('lgDesktop')`
+      margin: 0 33%;
+      font-size: 1.5rem;
+    `}
+    ${customMedia.lessThan('lmdDesktop')`
+      margin: 0 25%;
+      font-size: 1.5rem;
+    `}
+    ${customMedia.lessThan('tablet')`
+      margin: 0 20%;
+      font-size: 1.3rem;
+    `}
   }
 `;
 
@@ -96,6 +135,9 @@ const Title = styled.h1`
   font-size: 5rem;
   font-weight: 700;
   line-height: 1.1em;
+  ${customMedia.lessThan('tablet')`
+      font-size: 2.6rem;
+    `}
 `;
 
 // Subtitle
@@ -105,4 +147,8 @@ const Subtitle = styled.h2`
   line-height: 1.25em;
   margin: 0 0 1.875rem;
   text-transform: uppercase;
+  ${customMedia.lessThan('smTablet')`
+      font-size: 1.4rem;
+      margin: 0;
+    `}
 `;
