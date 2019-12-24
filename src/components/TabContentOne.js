@@ -2,7 +2,7 @@ import React from 'react'
 import { Button } from './Button'
 import Img from '../images/tab-1-pic.png'
 import styled from 'styled-components'
-import { generateMedia } from 'react-media-query'
+import { generateMedia } from 'media-query'
 
 function TabContentOne() {
 
