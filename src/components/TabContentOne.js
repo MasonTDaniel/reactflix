@@ -2,7 +2,7 @@ import React from 'react'
 import { Button } from './Button'
 import Img from '../images/tab-1-pic.png'
 import styled from 'styled-components'
-import { generateMedia } from 'media-query'
+import { generateMedia } from 'styled-media-query'
 
 function TabContentOne() {
 
@@ -59,5 +59,11 @@ img {
     align-items: center;
     font-size: 2rem;
     padding: 2.5rem;
+    ${customMedia.lessThan('tablet')`
+        grid-template-columns: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    `}
 }
 `;
