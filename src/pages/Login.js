@@ -1,16 +1,19 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import logo from '../svg/logo.svg'
+import logo from 'https://fontmeme.com/permalink/191224/4e672c3cea7f136c9ed2b6a93a68c4c0.png'
 import LoginForm from '../components/login/LoginForm'
 import LoginFooter from '../components/login/LoginFooter'
 import { generateMedia } from 'styled-media-query'
+import { Link } from 'react-router-dom'
 
 class Login extends Component {
     render() {
         return (
             <div className="main-login-container">
                 <div className="header-top">
-                    <Logo src={logo} alt="logo" className="logo" />
+                    <Link to="/">
+                        <Logo src={logo} alt="logo" className="logo" />
+                    </Link>
                 </div>
                 <LoginForm />
                 <LoginFooter />

@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import { generateMedia } from 'styled-media-query'
 import { Icon } from 'react-icons-kit'
 import { iosWorld } from 'react-icons-kit/ionicons/iosWorld/'
 import { arrowSortedDown } from 'react-icons-kit/typicons/arrowSortedDown/'
-import { generateMedia } from 'styled-media-query'
 
 class Footer extends Component {
     state = {
