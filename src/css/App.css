@@ -58,6 +58,12 @@ a {
     url(../images/bg.jpg) no-repeat center center/cover;
 }
 
+@media (max-width: 640px) {
+  .main-login-container {
+    background: #000;
+  }
+}
+
 .main-login-container::after {
   content: "";
   position: absolute;
