@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/reactflix/static/css/main.5d2486bf.chunk.css",
+    "main.js": "/reactflix/static/js/main.22a5a9b3.chunk.js",
+    "main.js.map": "/reactflix/static/js/main.22a5a9b3.chunk.js.map",
+    "runtime-main.js": "/reactflix/static/js/runtime-main.690f6de7.js",
+    "runtime-main.js.map": "/reactflix/static/js/runtime-main.690f6de7.js.map",
+    "static/js/2.b3608a50.chunk.js": "/reactflix/static/js/2.b3608a50.chunk.js",
+    "static/js/2.b3608a50.chunk.js.map": "/reactflix/static/js/2.b3608a50.chunk.js.map",
+    "index.html": "/reactflix/index.html",
+    "precache-manifest.e6e0700729800b2751c2ab7e3616a5cb.js": "/reactflix/precache-manifest.e6e0700729800b2751c2ab7e3616a5cb.js",
+    "service-worker.js": "/reactflix/service-worker.js",
+    "static/css/main.5d2486bf.chunk.css.map": "/reactflix/static/css/main.5d2486bf.chunk.css.map",
+    "static/js/2.b3608a50.chunk.js.LICENSE": "/reactflix/static/js/2.b3608a50.chunk.js.LICENSE",
+    "static/media/App.css": "/reactflix/static/media/bg.d9c94402.jpg",
+    "static/media/logo.svg": "/reactflix/static/media/logo.db59947e.svg",
+    "static/media/tab-1-pic.png": "/reactflix/static/media/tab-1-pic.fab25bc3.png",
+    "static/media/tab-macbook.png": "/reactflix/static/media/tab-macbook.66c7c1fb.png",
+    "static/media/tab-tablet.png": "/reactflix/static/media/tab-tablet.dc986d81.png",
+    "static/media/tab-tv.png": "/reactflix/static/media/tab-tv.9f91203b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.690f6de7.js",
+    "static/js/2.b3608a50.chunk.js",
+    "static/css/main.5d2486bf.chunk.css",
+    "static/js/main.22a5a9b3.chunk.js"
+  ]
+}
